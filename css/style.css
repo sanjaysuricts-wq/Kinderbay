@@ -606,63 +606,31 @@ a { text-decoration: none; color: inherit; }
   border-radius: 28px;
   min-height: 420px;
   overflow: hidden;
-  transition: background .2s;
 }
-.map-card:hover { background: rgba(255, 255, 255, .12); }
 
-.map-streets {
+.map-embed {
   position: absolute;
   inset: 0;
-  background:
-    repeating-linear-gradient(90deg, transparent 0 78px, rgba(255, 255, 255, .07) 78px 86px),
-    repeating-linear-gradient(0deg, transparent 0 78px, rgba(255, 255, 255, .07) 78px 86px);
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
 }
-.map-road-h {
-  position: absolute;
-  left: 0; right: 0; top: 46%;
-  height: 28px;
-  background: rgba(255, 255, 255, .1);
-  transform: rotate(-4deg);
-}
-.map-road-v {
-  position: absolute;
-  top: 6%; bottom: 0; left: 62%;
-  width: 26px;
-  background: rgba(255, 255, 255, .1);
-  transform: rotate(3deg);
-}
-
-.map-pin {
-  position: absolute;
-  left: 50%; top: 42%;
-  transform: translate(-50%, -100%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.map-pin-card {
-  background: #fff;
-  border-radius: 16px;
-  padding: 8px 14px;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, .3);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.map-pin-card img { width: 26px; }
-.map-pin-card span { font: 700 15px var(--font-display); color: var(--purple-deep); }
-.map-pin-stem { width: 4px; height: 26px; background: #fff; border-radius: 2px; margin-top: -2px; }
-.map-pin-dot { width: 12px; height: 12px; border-radius: 50%; background: var(--orange); margin-top: 2px; box-shadow: 0 0 0 6px rgba(248, 102, 52, .3); }
 
 .map-open-hint {
   position: absolute;
   right: 18px; bottom: 16px;
   font: 600 13px var(--font-label);
   color: var(--warm);
-  background: rgba(0, 0, 0, .25);
-  padding: 8px 14px;
+  background: rgba(30, 12, 55, .82);
+  padding: 10px 16px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
   border-radius: 999px;
+  transition: background .15s;
 }
+.map-open-hint:hover { background: rgba(30, 12, 55, .95); }
 
 /* --------------------------------------------------------------------------
    Footer
