@@ -142,8 +142,8 @@ a { text-decoration: none; color: inherit; }
 
 .logo-card {
   flex: none;
-  width: 150px;
-  height: 150px;
+  width: 156px;
+  height: 156px;
   border-radius: 50%;
   background: #fff;
   display: flex;
@@ -151,9 +151,9 @@ a { text-decoration: none; color: inherit; }
   justify-content: center;
   box-shadow: 0 6px 0 rgba(0, 0, 0, .18), 0 10px 24px rgba(0, 0, 0, .25);
   align-self: flex-start;
-  margin-bottom: -82px;
+  margin-bottom: -88px;
 }
-.logo-card img { height: 66px; width: auto; display: block; }
+.logo-card img { height: 62px; width: auto; display: block; }
 
 .logo-card-footer {
   border-radius: 0;
@@ -208,7 +208,7 @@ a { text-decoration: none; color: inherit; }
 
 .hero {
   position: relative;
-  padding-top: clamp(20px, 4vw, 34px);
+  padding-top: clamp(60px, 6vw, 76px);
 }
 
 .hero-inner {
@@ -921,9 +921,9 @@ a { text-decoration: none; color: inherit; }
   :root { --header-h: 74px; }
 
   .nav { padding-top: 10px; padding-bottom: 10px; }
-  .logo-card { width: 112px; height: 112px; margin-bottom: -58px; }
-  .logo-card img { height: 48px; }
-  .hero { padding-top: 72px; }
+  .logo-card { width: 116px; height: 116px; margin-bottom: -62px; }
+  .logo-card img { height: 46px; }
+  .hero { padding-top: 76px; }
   .nav-toggle { display: flex; }
 
   .nav-menu {
