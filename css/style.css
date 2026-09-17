@@ -499,6 +499,22 @@ a { text-decoration: none; color: inherit; }
   margin-top: 18px;
 }
 
+.specials-pop { margin-top: 30px; gap: 12px; }
+.specials-pop .specials-label {
+  font: 700 16px var(--font-label);
+  color: #fff;
+}
+
+.chip.chip-pop {
+  font: 700 15.5px var(--font-label);
+  padding: 11px 20px;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, .25);
+}
+.chip.chip-pop:nth-of-type(4n+1) { background: var(--orange); color: #4a1c07; }
+.chip.chip-pop:nth-of-type(4n+2) { background: var(--green-bright); color: #123c2a; }
+.chip.chip-pop:nth-of-type(4n+3) { background: var(--warm); color: #5a3a08; }
+.chip.chip-pop:nth-of-type(4n+4) { background: var(--lilac); color: #2b1252; }
+
 .chip.chip-cream {
   background: #EFE6FB;
   color: var(--ink-on-cream);
