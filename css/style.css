@@ -499,7 +499,7 @@ a { text-decoration: none; color: inherit; }
   margin-top: 18px;
 }
 
-.chip-cream {
+.chip.chip-cream {
   background: #EFE6FB;
   color: var(--ink-on-cream);
 }
