@@ -21,22 +21,25 @@
   }
 
   .top {
-    text-align: center;
-    padding: 10mm 10mm 0;
+    display: grid;
+    grid-template-columns: 1fr 56mm;
+    gap: 7mm;
+    align-items: center;
+    padding: 9mm 10mm 0;
+    text-align: left;
   }
   .logo-circle {
-    width: 34mm; height: 34mm;
+    width: 27mm; height: 27mm;
     border-radius: 50%;
     background: #fff;
-    margin: 0 auto;
     display: flex; align-items: center; justify-content: center;
     box-shadow: 0 1.6mm 0 rgba(0,0,0,.22);
   }
-  .logo-circle img { width: 24mm; }
+  .logo-circle img { width: 19mm; }
 
   .tagline {
     display: inline-block;
-    margin-top: 5mm;
+    margin-top: 4mm;
     background: rgba(255,255,255,.16);
     color: #FFD9A0;
     font: 700 3.2mm 'Fredoka', sans-serif;
@@ -47,7 +50,7 @@
   }
 
   h1 {
-    font: 800 11.5mm/1.0 'Baloo 2', sans-serif;
+    font: 800 9.6mm/1.0 'Baloo 2', sans-serif;
     color: #fff;
     letter-spacing: -.015em;
     margin-top: 4mm;
@@ -56,26 +59,52 @@
   h1 .g { color: #3DCB92; }
 
   .sub {
-    font: 600 3.7mm/1.45 'Nunito Sans', sans-serif;
+    font: 600 3.5mm/1.45 'Nunito Sans', sans-serif;
     color: #e3d7f5;
-    max-width: 108mm;
-    margin: 3.5mm auto 0;
+    margin: 3mm 0 0;
+  }
+
+  .photo-wrap { position: relative; }
+  .photo-card {
+    background: #fff;
+    border-radius: 6.5mm;
+    padding: 2mm;
+    transform: rotate(2deg);
+    box-shadow: 0 2.2mm 0 rgba(0,0,0,.2);
+  }
+  .photo-card img { display: block; width: 100%; border-radius: 5mm; }
+  .pm {
+    position: absolute;
+    filter: drop-shadow(0 1.4mm 1.4mm rgba(0,0,0,.3));
+  }
+  .pm-circle { width: 14mm; right: -3.5mm; top: -5mm; transform: rotate(9deg); }
+  .slots {
+    position: absolute;
+    left: -4mm; bottom: 7mm;
+    background: #F6602B;
+    color: #fff;
+    font: 700 3.8mm 'Fredoka', sans-serif;
+    letter-spacing: .03em;
+    padding: 2.4mm 5mm;
+    border-radius: 99mm;
+    transform: rotate(-5deg);
+    box-shadow: 0 1.4mm 0 #a63d10;
   }
 
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3mm;
-    padding: 6mm 10mm 0;
+    gap: 2.6mm;
+    padding: 5mm 10mm 0;
   }
   .act {
-    display: flex; align-items: center; gap: 3mm;
+    display: flex; align-items: center; gap: 2.6mm;
     border-radius: 4mm;
-    padding: 3mm 4mm;
+    padding: 2.5mm 3.6mm;
     box-shadow: 0 1.2mm 0 rgba(0,0,0,.18);
   }
   .act img { width: 7mm; flex: none; }
-  .act span { font: 700 3.9mm/1.15 'Baloo 2', sans-serif; }
+  .act span { font: 700 3.6mm/1.15 'Baloo 2', sans-serif; }
   .a1 { background: #188352; } .a1 span { color: #fff; }
   .a2 { background: #27A371; } .a2 span { color: #06281c; }
   .a3 { background: #F6602B; } .a3 span { color: #4a1c07; }
@@ -85,7 +114,7 @@
   .a7 { background: #3DCB92; } .a7 span { color: #123c2a; }
   .a8 { background: #fff;    } .a8 span { color: #563188; }
 
-  .wave { width: 148mm; display: block; margin-top: 5mm; }
+  .wave { width: 148mm; display: block; margin-top: 4mm; }
 
   .footer {
     margin-top: auto;
@@ -113,10 +142,17 @@
 <body>
 <div class="page">
   <div class="top">
-    <div class="logo-circle"><img src="logo.svg" alt="Kinderbay"></div>
-    <div><span class="tagline">A Place to Learn, Explore &amp; Belong</span></div>
-    <h1>More Than a <span class="o">Kids</span> <span class="g">Club</span></h1>
-    <p class="sub">Early learning, creative play, movement and everyday adventures — in a safe, inspiring space designed for little ones.</p>
+    <div>
+      <div class="logo-circle"><img src="logo.svg" alt="Kinderbay"></div>
+      <div><span class="tagline">A Place to Learn, Explore &amp; Belong</span></div>
+      <h1>More Than a <span class="o">Kids</span> <span class="g">Club</span></h1>
+      <p class="sub">Early learning, creative play, movement and everyday adventures — in a safe, inspiring space designed for little ones.</p>
+    </div>
+    <div class="photo-wrap">
+      <div class="photo-card"><img src="hero-kid.jpg" alt="A child hugging a plush Kinderbay cushion"></div>
+      <img class="pm pm-circle" src="mascot-circle.svg" alt="">
+      <span class="slots">Limited slots available!</span>
+    </div>
   </div>
 
   <div class="grid">

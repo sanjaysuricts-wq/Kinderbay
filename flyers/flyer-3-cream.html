@@ -20,26 +20,53 @@
   }
 
   .top {
-    text-align: center;
-    padding: 8mm 12mm 0;
+    display: grid;
+    grid-template-columns: 1fr 48mm;
+    gap: 7mm;
+    align-items: center;
+    text-align: left;
+    padding: 8mm 11mm 0;
   }
-  .top .logo { width: 40mm; filter: drop-shadow(0 1.2mm 1.8mm rgba(60,30,100,.25)); }
+  .top .logo { width: 34mm; filter: drop-shadow(0 1.2mm 1.8mm rgba(60,30,100,.25)); }
 
   h1 {
-    font: 800 9.4mm/1.02 'Baloo 2', sans-serif;
+    font: 800 8.6mm/1.02 'Baloo 2', sans-serif;
     color: #563188;
     letter-spacing: -.01em;
-    margin-top: 3.5mm;
+    margin-top: 3mm;
+  }
+
+  .photo-wrap { position: relative; }
+  .photo-card {
+    background: #fff;
+    border: .6mm solid #ecdfcc;
+    border-radius: 6mm;
+    padding: 1.8mm;
+    transform: rotate(2deg);
+    box-shadow: 0 2mm 0 rgba(60,30,100,.18);
+  }
+  .photo-card img { display: block; width: 100%; border-radius: 4.6mm; }
+  .slots {
+    position: absolute;
+    left: -5mm; bottom: 6mm;
+    background: #F6602B;
+    color: #fff;
+    font: 700 3.6mm 'Fredoka', sans-serif;
+    letter-spacing: .03em;
+    padding: 2.2mm 4.6mm;
+    border-radius: 99mm;
+    transform: rotate(-5deg);
+    box-shadow: 0 1.3mm 0 #a63d10;
   }
   .lep {
     display: inline-block;
     margin-top: 2.5mm;
     background: #563188;
     color: #FFD9A0;
-    font: 700 3.4mm 'Fredoka', sans-serif;
+    font: 700 3mm 'Fredoka', sans-serif;
     letter-spacing: .08em;
     text-transform: uppercase;
-    padding: 2.2mm 6mm;
+    padding: 2mm 4.6mm; white-space: nowrap;
     border-radius: 99mm;
     box-shadow: 0 1.2mm 0 rgba(60,30,100,.3);
   }
@@ -47,17 +74,17 @@
   .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 2.6mm;
-    padding: 5mm 10mm 0;
+    gap: 2.4mm;
+    padding: 4.5mm 10mm 0;
   }
   .card {
     border-radius: 5mm;
-    padding: 3mm 3mm 3.4mm;
+    padding: 2.6mm 2.8mm 3mm;
     text-align: center;
     box-shadow: 0 1.4mm 0 rgba(0,0,0,.16);
   }
-  .card img { width: 7.5mm; }
-  .card div { font: 700 3.5mm/1.15 'Baloo 2', sans-serif; margin-top: 1.4mm; }
+  .card img { width: 6.6mm; }
+  .card div { font: 700 3.3mm/1.15 'Baloo 2', sans-serif; margin-top: 1.2mm; }
   .k1 { background: #188352; } .k1 div { color: #fff; }
   .k2 { background: #F6602B; } .k2 div { color: #4a1c07; }
   .k3 { background: #A076D6; } .k3 div { color: #2b1252; }
@@ -69,13 +96,13 @@
   .k9 { background: #fff; border: .6mm solid #ecdfcc; } .k9 div { color: #563188; }
 
   .parents {
-    margin: 4mm 10mm 0;
+    margin: 3.4mm 10mm 0;
     background: #fff;
     border: .6mm solid #ecdfcc;
     border-radius: 5mm;
     padding: 3mm 5mm;
     text-align: center;
-    font: 600 3.4mm/1.5 'Nunito Sans', sans-serif;
+    font: 600 3.3mm/1.5 'Nunito Sans', sans-serif;
     color: #5d4d77;
   }
   .parents b { font-family: 'Baloo 2', sans-serif; color: #563188; }
@@ -101,9 +128,15 @@
 <body>
 <div class="page">
   <div class="top">
-    <img class="logo" src="logo-sticker.svg" alt="Kinderbay">
-    <h1>A Place to Learn,<br>Explore &amp; Belong</h1>
-    <div><span class="lep">Learn · Explore · Play · Make Friends</span></div>
+    <div>
+      <img class="logo" src="logo-sticker.svg" alt="Kinderbay">
+      <h1>A Place to Learn,<br>Explore &amp; Belong</h1>
+      <div><span class="lep">Learn · Explore · Play · Make Friends</span></div>
+    </div>
+    <div class="photo-wrap">
+      <div class="photo-card"><img src="hero-kid.jpg" alt="A child hugging a plush Kinderbay cushion"></div>
+      <span class="slots">Limited slots available!</span>
+    </div>
   </div>
 
   <div class="cards">
