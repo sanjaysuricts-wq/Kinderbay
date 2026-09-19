@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Kinderbay Flyer — Cream</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap">
+<style>
+  @page { size: 148mm 210mm; margin: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  html, body { width: 148mm; height: 210mm; overflow: hidden; }
+  body { font-family: 'Nunito Sans', sans-serif; }
+
+  .page {
+    position: relative;
+    width: 148mm; height: 210mm;
+    background: #FFF8EE;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top {
+    text-align: center;
+    padding: 8mm 12mm 0;
+  }
+  .top .logo { width: 40mm; filter: drop-shadow(0 1.2mm 1.8mm rgba(60,30,100,.25)); }
+
+  h1 {
+    font: 800 9.4mm/1.02 'Baloo 2', sans-serif;
+    color: #563188;
+    letter-spacing: -.01em;
+    margin-top: 3.5mm;
+  }
+  .lep {
+    display: inline-block;
+    margin-top: 2.5mm;
+    background: #563188;
+    color: #FFD9A0;
+    font: 700 3.4mm 'Fredoka', sans-serif;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    padding: 2.2mm 6mm;
+    border-radius: 99mm;
+    box-shadow: 0 1.2mm 0 rgba(60,30,100,.3);
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.6mm;
+    padding: 5mm 10mm 0;
+  }
+  .card {
+    border-radius: 5mm;
+    padding: 3mm 3mm 3.4mm;
+    text-align: center;
+    box-shadow: 0 1.4mm 0 rgba(0,0,0,.16);
+  }
+  .card img { width: 7.5mm; }
+  .card div { font: 700 3.5mm/1.15 'Baloo 2', sans-serif; margin-top: 1.4mm; }
+  .k1 { background: #188352; } .k1 div { color: #fff; }
+  .k2 { background: #F6602B; } .k2 div { color: #4a1c07; }
+  .k3 { background: #A076D6; } .k3 div { color: #2b1252; }
+  .k4 { background: #FFD9A0; } .k4 div { color: #5a3a08; }
+  .k5 { background: #7044B2; } .k5 div { color: #fff; }
+  .k6 { background: #3DCB92; } .k6 div { color: #123c2a; }
+  .k7 { background: #27A371; } .k7 div { color: #06281c; }
+  .k8 { background: #563188; } .k8 div { color: #fff; }
+  .k9 { background: #fff; border: .6mm solid #ecdfcc; } .k9 div { color: #563188; }
+
+  .parents {
+    margin: 4mm 10mm 0;
+    background: #fff;
+    border: .6mm solid #ecdfcc;
+    border-radius: 5mm;
+    padding: 3mm 5mm;
+    text-align: center;
+    font: 600 3.4mm/1.5 'Nunito Sans', sans-serif;
+    color: #5d4d77;
+  }
+  .parents b { font-family: 'Baloo 2', sans-serif; color: #563188; }
+
+  .footer {
+    margin-top: auto;
+    position: relative;
+    background: #563188 url("bg-wave-tile.png");
+    background-size: 60mm;
+    border-radius: 9mm 9mm 0 0;
+    padding: 5.5mm 12mm 6.5mm;
+    text-align: center;
+  }
+  .footer .find { font: 700 3mm 'Fredoka', sans-serif; letter-spacing: .08em; text-transform: uppercase; color: #FFD9A0; }
+  .footer .hotel { font: 800 6.6mm/1.1 'Baloo 2', sans-serif; color: #fff; margin-top: 1.2mm; }
+  .footer .street { font: 600 3.6mm/1.45 'Nunito Sans', sans-serif; color: #e3d7f5; margin-top: 1.2mm; }
+  .footer .links { font: 700 3.6mm 'Fredoka', sans-serif; color: #3DCB92; margin-top: 2mm; }
+  .footer .m { position: absolute; filter: drop-shadow(0 1.2mm 1.2mm rgba(0,0,0,.3)); }
+  .footer .m1 { width: 13mm; left: 7mm; top: -6mm; transform: rotate(-10deg); }
+  .footer .m2 { width: 13mm; right: 7mm; top: -6mm; transform: rotate(10deg); }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="top">
+    <img class="logo" src="logo-sticker.svg" alt="Kinderbay">
+    <h1>A Place to Learn,<br>Explore &amp; Belong</h1>
+    <div><span class="lep">Learn · Explore · Play · Make Friends</span></div>
+  </div>
+
+  <div class="cards">
+    <div class="card k1"><img src="mascot-square.svg" alt=""><div>Circle Time &amp; School Readiness</div></div>
+    <div class="card k2"><img src="mascot-triangle.svg" alt=""><div>Indoor Slides &amp; Soft Play</div></div>
+    <div class="card k3"><img src="mascot-square.svg" alt=""><div>Toy Library</div></div>
+    <div class="card k4"><img src="mascot-circle.svg" alt=""><div>Outdoor Jungle Gym</div></div>
+    <div class="card k5"><img src="mascot-square.svg" alt=""><div>Video Game Room</div></div>
+    <div class="card k6"><img src="mascot-triangle.svg" alt=""><div>Sports &amp; Yoga Classes</div></div>
+    <div class="card k7"><img src="mascot-circle.svg" alt=""><div>Cooking &amp; Baking</div></div>
+    <div class="card k8"><img src="mascot-circle.svg" alt=""><div>Library Tree &amp; Story Time</div></div>
+    <div class="card k9"><img src="mascot-triangle.svg" alt=""><div>STEM, Water Play &amp; Events</div></div>
+  </div>
+
+  <p class="parents"><b>Real teachers on site</b> · fresh weekly programs · non-toxic materials<br>and a parents' community that stays connected all day.</p>
+
+  <div class="footer">
+    <img class="m m1" src="mascot-triangle.svg" alt="">
+    <img class="m m2" src="mascot-circle.svg" alt="">
+    <div class="find">Find us inside</div>
+    <div class="hotel">Millennium Atria Hotel</div>
+    <div class="street">Marasi Drive, Business Bay, Dubai · Open daily 9 AM – 8 PM</div>
+    <div class="links">kinderbay.ae &nbsp;·&nbsp; @kinderbay.ae &nbsp;·&nbsp; hello@kinderbay.ae</div>
+  </div>
+</div>
+</body>
+</html>
