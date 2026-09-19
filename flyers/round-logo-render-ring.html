@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><style>
+  * { margin:0; padding:0; }
+  body { background: transparent; }
+  .stage { width: 1500px; height: 1500px; display: flex; align-items: center; justify-content: center; }
+  .ring {
+    display: inline-flex;
+    padding: 36px;
+    border-radius: 50%;
+    background: conic-gradient(from 210deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5, #feda75);
+  }
+  .circle {
+    width: 1280px; height: 1280px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .ring .circle { width: 1200px; height: 1200px; border: 30px solid transparent; background-clip: padding-box; }
+  .circle img { width: 62%; display: block; }
+</style></head>
+<body>
+<div class="stage" id="stage">
+  <div class="ring"><div class="circle"><img src="logo.svg"></div></div>
+</div>
+</body></html>
