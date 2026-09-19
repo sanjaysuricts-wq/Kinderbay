@@ -69,6 +69,18 @@
   }
   .m-circle { width: 15mm; right: -4mm; top: -6mm; transform: rotate(9deg); }
   .m-triangle { width: 15mm; left: -5mm; bottom: -5mm; transform: rotate(-10deg); }
+  .opennow {
+    position: absolute;
+    left: -5mm; top: 8mm;
+    background: #3DCB92;
+    color: #123c2a;
+    font: 700 3.9mm 'Fredoka', sans-serif;
+    padding: 2.2mm 4.8mm;
+    border-radius: 99mm;
+    transform: rotate(-5deg);
+    box-shadow: 0 1.3mm 0 #1d7a52;
+    z-index: 2;
+  }
   .slots {
     position: absolute;
     left: -6mm; bottom: 14mm;
@@ -109,9 +121,23 @@
     left: 0; right: 0; bottom: 0;
     background: #FFF8EE;
     border-radius: 8mm 8mm 0 0;
-    padding: 6mm 10mm 8mm;
-    text-align: center;
+    padding: 5mm 10mm 6mm;
+    display: flex;
+    align-items: center;
+    gap: 6mm;
+    text-align: left;
   }
+  .footer .addr { flex: 1; }
+  .qr { flex: none; text-align: center; }
+  .qr .box {
+    width: 23mm; height: 23mm;
+    background: #fff;
+    border: .5mm solid #ecdfcc;
+    border-radius: 3mm;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .qr .box img { width: 19.5mm; }
+  .qr .cap { font: 700 2.5mm/1.25 'Fredoka', sans-serif; color: #563188; margin-top: 1.2mm; width: 25mm; }
   .footer .find { font: 700 3mm 'Fredoka', sans-serif; letter-spacing: .07em; text-transform: uppercase; color: #c9471a; }
   .footer .hotel { font: 800 6.4mm/1.1 'Baloo 2', sans-serif; color: #563188; margin-top: 1.2mm; }
   .footer .street { font: 600 3.6mm/1.45 'Nunito Sans', sans-serif; color: #5d4d77; margin-top: 1.2mm; }
@@ -131,6 +157,7 @@
       <div class="photo-card"><img src="hero-kid.jpg" alt="A child hugging a plush Kinderbay cushion"></div>
       <img class="m m-circle" src="mascot-circle.svg" alt="">
       <img class="m m-triangle" src="mascot-triangle.svg" alt="">
+      <span class="opennow">Open now.</span>
       <span class="slots">Limited slots available!</span>
     </div>
   </div>
@@ -153,10 +180,16 @@
   </div>
 
   <div class="footer">
-    <div class="find">Find us inside</div>
-    <div class="hotel">Millennium Atria Hotel</div>
-    <div class="street">Marasi Drive, Business Bay, Dubai<br>Open daily 9 AM – 8 PM</div>
-    <div class="links">kinderbay.ae &nbsp;·&nbsp; @kinderbay.ae &nbsp;·&nbsp; hello@kinderbay.ae</div>
+    <div class="addr">
+      <div class="find">Find us inside</div>
+      <div class="hotel">Millennium Atria Hotel</div>
+      <div class="street">Marasi Drive, Business Bay, Dubai<br>Open daily 9 AM – 8 PM</div>
+      <div class="links">kinderbay.ae &nbsp;·&nbsp; @kinderbay.ae &nbsp;·&nbsp; hello@kinderbay.ae</div>
+    </div>
+    <div class="qr">
+      <div class="box"><img src="whatsapp-qr.png" alt="WhatsApp group QR code"></div>
+      <div class="cap">Scan to join our WhatsApp group</div>
+    </div>
   </div>
 </div>
 </body>

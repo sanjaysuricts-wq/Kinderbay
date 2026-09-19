@@ -46,6 +46,18 @@
     box-shadow: 0 2mm 0 rgba(60,30,100,.18);
   }
   .photo-card img { display: block; width: 100%; border-radius: 4.6mm; }
+  .opennow {
+    position: absolute;
+    left: -4mm; top: -4mm;
+    background: #3DCB92;
+    color: #123c2a;
+    font: 700 3.6mm 'Fredoka', sans-serif;
+    padding: 2mm 4.4mm;
+    border-radius: 99mm;
+    transform: rotate(-4deg);
+    box-shadow: 0 1.2mm 0 #1d7a52;
+    z-index: 2;
+  }
   .slots {
     position: absolute;
     left: -5mm; bottom: 6mm;
@@ -113,15 +125,29 @@
     background: #563188 url("bg-wave-tile.png");
     background-size: 60mm;
     border-radius: 9mm 9mm 0 0;
-    padding: 5.5mm 12mm 6.5mm;
-    text-align: center;
+    padding: 5mm 11mm 5.5mm;
+    display: flex;
+    align-items: center;
+    gap: 6mm;
+    text-align: left;
   }
+  .footer .addr { flex: 1; }
+  .qr { flex: none; text-align: center; position: relative; z-index: 2; }
+  .qr .box {
+    width: 23mm; height: 23mm;
+    background: #fff;
+    border-radius: 3mm;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 1.2mm 0 rgba(0,0,0,.25);
+  }
+  .qr .box img { width: 19.5mm; }
+  .qr .cap { font: 700 2.5mm/1.25 'Fredoka', sans-serif; color: #FFD9A0; margin-top: 1.2mm; width: 25mm; }
   .footer .find { font: 700 3mm 'Fredoka', sans-serif; letter-spacing: .08em; text-transform: uppercase; color: #FFD9A0; }
   .footer .hotel { font: 800 6.6mm/1.1 'Baloo 2', sans-serif; color: #fff; margin-top: 1.2mm; }
   .footer .street { font: 600 3.6mm/1.45 'Nunito Sans', sans-serif; color: #e3d7f5; margin-top: 1.2mm; }
   .footer .links { font: 700 3.6mm 'Fredoka', sans-serif; color: #3DCB92; margin-top: 2mm; }
   .footer .m { position: absolute; filter: drop-shadow(0 1.2mm 1.2mm rgba(0,0,0,.3)); }
-  .footer .m1 { width: 13mm; left: 7mm; top: -6mm; transform: rotate(-10deg); }
+  .footer .m1 { width: 13mm; left: 50%; margin-left: -6.5mm; top: -7mm; transform: rotate(-10deg); }
   .footer .m2 { width: 13mm; right: 7mm; top: -6mm; transform: rotate(10deg); }
 </style>
 </head>
@@ -135,6 +161,7 @@
     </div>
     <div class="photo-wrap">
       <div class="photo-card"><img src="hero-kid.jpg" alt="A child hugging a plush Kinderbay cushion"></div>
+      <span class="opennow">Open now.</span>
       <span class="slots">Limited slots available!</span>
     </div>
   </div>
@@ -155,11 +182,16 @@
 
   <div class="footer">
     <img class="m m1" src="mascot-triangle.svg" alt="">
-    <img class="m m2" src="mascot-circle.svg" alt="">
-    <div class="find">Find us inside</div>
-    <div class="hotel">Millennium Atria Hotel</div>
-    <div class="street">Marasi Drive, Business Bay, Dubai · Open daily 9 AM – 8 PM</div>
-    <div class="links">kinderbay.ae &nbsp;·&nbsp; @kinderbay.ae &nbsp;·&nbsp; hello@kinderbay.ae</div>
+    <div class="addr">
+      <div class="find">Find us inside</div>
+      <div class="hotel">Millennium Atria Hotel</div>
+      <div class="street">Marasi Drive, Business Bay, Dubai<br>Open daily 9 AM – 8 PM</div>
+      <div class="links">kinderbay.ae &nbsp;·&nbsp; @kinderbay.ae<br>hello@kinderbay.ae</div>
+    </div>
+    <div class="qr">
+      <div class="box"><img src="whatsapp-qr.png" alt="WhatsApp group QR code"></div>
+      <div class="cap">Scan to join our WhatsApp group</div>
+    </div>
   </div>
 </div>
 </body>

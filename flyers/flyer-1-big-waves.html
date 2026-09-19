@@ -78,6 +78,18 @@
     filter: drop-shadow(0 1.4mm 1.4mm rgba(0,0,0,.3));
   }
   .pm-circle { width: 14mm; right: -3.5mm; top: -5mm; transform: rotate(9deg); }
+  .opennow {
+    position: absolute;
+    left: -4mm; top: -4mm;
+    background: #3DCB92;
+    color: #123c2a;
+    font: 700 3.8mm 'Fredoka', sans-serif;
+    padding: 2.2mm 4.6mm;
+    border-radius: 99mm;
+    transform: rotate(-4deg);
+    box-shadow: 0 1.3mm 0 #1d7a52;
+    z-index: 2;
+  }
   .slots {
     position: absolute;
     left: -4mm; bottom: 7mm;
@@ -119,20 +131,24 @@
   .footer {
     margin-top: auto;
     background: #FFF8EE;
-    padding: 5.5mm 10mm 7mm;
+    padding: 4.5mm 10mm 5.5mm;
     display: flex;
     align-items: center;
     gap: 6mm;
   }
-  .pin {
+  .qr {
     flex: none;
-    width: 16mm; height: 16mm;
-    border-radius: 50%;
-    background: #F6602B;
-    display: flex; align-items: center; justify-content: center;
-    box-shadow: 0 1.2mm 0 #cf4f24;
+    text-align: center;
   }
-  .pin img { width: 10mm; }
+  .qr .box {
+    width: 23mm; height: 23mm;
+    background: #fff;
+    border: .5mm solid #ecdfcc;
+    border-radius: 3mm;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .qr .box img { width: 19.5mm; }
+  .qr .cap { font: 700 2.5mm/1.25 'Fredoka', sans-serif; color: #563188; margin-top: 1.2mm; width: 25mm; }
   .addr .find { font: 700 3mm 'Fredoka', sans-serif; letter-spacing: .07em; text-transform: uppercase; color: #c9471a; }
   .addr .hotel { font: 800 5.4mm/1.1 'Baloo 2', sans-serif; color: #563188; margin-top: 1mm; }
   .addr .street { font: 600 3.4mm/1.4 'Nunito Sans', sans-serif; color: #5d4d77; margin-top: 1mm; }
@@ -151,6 +167,7 @@
     <div class="photo-wrap">
       <div class="photo-card"><img src="hero-kid.jpg" alt="A child hugging a plush Kinderbay cushion"></div>
       <img class="pm pm-circle" src="mascot-circle.svg" alt="">
+      <span class="opennow">Open now.</span>
       <span class="slots">Limited slots available!</span>
     </div>
   </div>
@@ -169,7 +186,10 @@
   <img class="wave" src="wave-divider.png" alt="">
 
   <div class="footer">
-    <div class="pin"><img src="mascot-circle.svg" alt=""></div>
+    <div class="qr">
+      <div class="box"><img src="whatsapp-qr.png" alt="WhatsApp group QR code"></div>
+      <div class="cap">Scan to join our WhatsApp group</div>
+    </div>
     <div class="addr">
       <div class="find">Find us inside</div>
       <div class="hotel">Millennium Atria Hotel</div>
