@@ -22,43 +22,55 @@
 
   /* ---------- header ---------- */
   .header {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 54mm;
+    gap: 9mm;
     align-items: center;
-    gap: 8mm;
-    padding: 11mm 14mm 0;
+    padding: 9mm 14mm 0;
   }
   .logo-circle {
-    flex: none;
-    width: 34mm; height: 34mm;
+    width: 46mm; height: 46mm;
     border-radius: 50%;
     background: #fff;
     display: flex; align-items: center; justify-content: center;
-    box-shadow: 0 1.8mm 0 rgba(0,0,0,.22);
+    box-shadow: 0 2mm 0 rgba(0,0,0,.22);
   }
-  .logo-circle img { width: 24mm; }
+  .logo-circle img { width: 33mm; }
   .header h1 {
     font: 800 13mm/1.0 'Baloo 2', sans-serif;
     color: #fff;
     letter-spacing: -.01em;
+    margin-top: 5mm;
   }
   .header .sub {
-    font: 700 4.2mm 'Fredoka', sans-serif;
+    font: 700 4.4mm 'Fredoka', sans-serif;
     color: #FFD9A0;
-    letter-spacing: .06em;
+    letter-spacing: .05em;
     text-transform: uppercase;
-    margin-top: 2mm;
+    margin-top: 2.4mm;
   }
-  .header .m { margin-left: auto; display: flex; gap: 4mm; align-items: flex-start; }
-  .header .m img { width: 15mm; filter: drop-shadow(0 1.4mm 1.4mm rgba(0,0,0,.3)); }
-  .header .m img:nth-child(1) { transform: rotate(-9deg); }
-  .header .m img:nth-child(2) { transform: rotate(7deg); margin-top: 4mm; }
+  .photo-wrap { position: relative; }
+  .photo-card {
+    background: #fff;
+    border-radius: 6.5mm;
+    padding: 2mm;
+    transform: rotate(2deg);
+    box-shadow: 0 2.2mm 0 rgba(0,0,0,.22);
+  }
+  .photo-card img { display: block; width: 100%; border-radius: 5mm; }
+  .pm {
+    position: absolute;
+    filter: drop-shadow(0 1.4mm 1.4mm rgba(0,0,0,.3));
+  }
+  .pm-circle { width: 14mm; right: -4mm; top: -5mm; transform: rotate(9deg); }
+  .pm-triangle { width: 14mm; left: -4.5mm; bottom: -4.5mm; transform: rotate(-10deg); }
 
   /* ---------- drop-in hero ---------- */
   .dropin {
-    margin: 9mm 14mm 0;
+    margin: 7mm 14mm 0;
     background: #FFF8EE;
     border-radius: 9mm;
-    padding: 8mm 8mm 9mm;
+    padding: 6mm 8mm 7mm;
     box-shadow: 0 2.2mm 0 rgba(0,0,0,.22);
   }
   .dropin .t {
@@ -68,18 +80,18 @@
     text-transform: uppercase;
     color: #c9471a;
   }
-  .dropin .t2 { text-align: center; font: 800 13mm/1.05 'Baloo 2', sans-serif; color: #563188; margin-top: 2mm; }
+  .dropin .t2 { text-align: center; font: 800 11mm/1.05 'Baloo 2', sans-serif; color: #563188; margin-top: 1.6mm; }
   .drows {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 6mm;
-    margin-top: 7mm;
+    gap: 5mm;
+    margin-top: 5mm;
   }
   .drow {
     background: #fff;
     border: .6mm solid #ecdfcc;
     border-radius: 7mm;
-    padding: 7mm 4mm 7.5mm;
+    padding: 5.5mm 4mm 6mm;
     text-align: center;
   }
   .drow.featured-row {
@@ -88,7 +100,7 @@
     box-shadow: 0 2mm 0 #a63d10;
   }
   .drow .h { font: 700 6mm 'Baloo 2', sans-serif; color: #563188; }
-  .drow .p { font: 800 11mm/1 'Baloo 2', sans-serif; color: #F6602B; margin-top: 3mm; white-space: nowrap; }
+  .drow .p { font: 800 10mm/1 'Baloo 2', sans-serif; color: #F6602B; margin-top: 3mm; white-space: nowrap; }
   .drow .d { font: 600 3.6mm/1.4 'Nunito Sans', sans-serif; color: #6a5a83; margin-top: 2.4mm; }
   .drow.featured-row .h { color: #fff; }
   .drow.featured-row .p { color: #fff; }
@@ -99,13 +111,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 6mm;
-    padding: 7mm 14mm 0;
+    padding: 6mm 14mm 0;
   }
   .plan {
     background: rgba(255,255,255,.1);
     border: .6mm solid rgba(255,255,255,.22);
     border-radius: 8mm;
-    padding: 6mm 6.5mm 6.5mm;
+    padding: 5mm 6mm 5.5mm;
   }
   .plan .tag {
     display: inline-block;
@@ -117,11 +129,11 @@
     padding: 1.8mm 4mm;
     border-radius: 99mm;
   }
-  .plan h2 { font: 800 6.6mm/1.1 'Baloo 2', sans-serif; color: #fff; margin-top: 3.5mm; }
-  .plan .pdesc { font: 600 3.7mm/1.5 'Nunito Sans', sans-serif; color: #e3d7f5; margin-top: 2.6mm; }
+  .plan h2 { font: 800 6mm/1.1 'Baloo 2', sans-serif; color: #fff; margin-top: 3mm; }
+  .plan .pdesc { font: 600 3.5mm/1.5 'Nunito Sans', sans-serif; color: #e3d7f5; margin-top: 2.2mm; }
   .plan .avail {
     display: inline-block;
-    margin-top: 4mm;
+    margin-top: 3.4mm;
     background: #3DCB92;
     color: #123c2a;
     font: 700 3.7mm 'Fredoka', sans-serif;
@@ -160,14 +172,15 @@
 <body>
 <div class="page">
   <div class="header">
-    <div class="logo-circle"><img src="logo.svg" alt="Kinderbay"></div>
     <div>
+      <div class="logo-circle"><img src="logo.svg" alt="Kinderbay"></div>
       <h1>Price List</h1>
-      <div class="sub">Drop-in Play &amp; Memberships</div>
+      <div class="sub">A Place to Learn, Explore &amp; Belong</div>
     </div>
-    <div class="m">
-      <img src="mascot-triangle.svg" alt="">
-      <img src="mascot-circle.svg" alt="">
+    <div class="photo-wrap">
+      <div class="photo-card"><img src="hero-kid.jpg" alt="A child hugging a plush Kinderbay cushion"></div>
+      <img class="pm pm-circle" src="mascot-circle.svg" alt="">
+      <img class="pm pm-triangle" src="mascot-triangle.svg" alt="">
     </div>
   </div>
 
