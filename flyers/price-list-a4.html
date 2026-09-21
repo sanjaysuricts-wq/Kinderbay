@@ -53,98 +53,89 @@
   .header .m img:nth-child(1) { transform: rotate(-9deg); }
   .header .m img:nth-child(2) { transform: rotate(7deg); margin-top: 4mm; }
 
-  /* ---------- memberships ---------- */
+  /* ---------- drop-in hero ---------- */
+  .dropin {
+    margin: 9mm 14mm 0;
+    background: #FFF8EE;
+    border-radius: 9mm;
+    padding: 8mm 8mm 9mm;
+    box-shadow: 0 2.2mm 0 rgba(0,0,0,.22);
+  }
+  .dropin .t {
+    text-align: center;
+    font: 700 4.2mm 'Fredoka', sans-serif;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    color: #c9471a;
+  }
+  .dropin .t2 { text-align: center; font: 800 13mm/1.05 'Baloo 2', sans-serif; color: #563188; margin-top: 2mm; }
+  .drows {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6mm;
+    margin-top: 7mm;
+  }
+  .drow {
+    background: #fff;
+    border: .6mm solid #ecdfcc;
+    border-radius: 7mm;
+    padding: 7mm 4mm 7.5mm;
+    text-align: center;
+  }
+  .drow.featured-row {
+    background: #F6602B;
+    border-color: #F6602B;
+    box-shadow: 0 2mm 0 #a63d10;
+  }
+  .drow .h { font: 700 6mm 'Baloo 2', sans-serif; color: #563188; }
+  .drow .p { font: 800 11mm/1 'Baloo 2', sans-serif; color: #F6602B; margin-top: 3mm; white-space: nowrap; }
+  .drow .d { font: 600 3.6mm/1.4 'Nunito Sans', sans-serif; color: #6a5a83; margin-top: 2.4mm; }
+  .drow.featured-row .h { color: #fff; }
+  .drow.featured-row .p { color: #fff; }
+  .drow.featured-row .d { color: #4a1c07; }
+
+  /* ---------- memberships (no prices) ---------- */
   .plans {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 6mm;
-    padding: 9mm 14mm 0;
+    padding: 7mm 14mm 0;
   }
   .plan {
-    background: #FFF8EE;
+    background: rgba(255,255,255,.1);
+    border: .6mm solid rgba(255,255,255,.22);
     border-radius: 8mm;
-    padding: 7mm 7mm 7.5mm;
-    box-shadow: 0 2mm 0 rgba(0,0,0,.2);
+    padding: 6mm 6.5mm 6.5mm;
   }
-  .plan.featured { background: #F6602B; }
-
   .plan .tag {
     display: inline-block;
     font: 700 3.4mm 'Fredoka', sans-serif;
-    letter-spacing: .06em;
+    letter-spacing: .05em;
     text-transform: uppercase;
-    color: #c9471a;
-    background: rgba(246,96,43,.12);
+    color: #FFD9A0;
+    background: rgba(255,255,255,.14);
     padding: 1.8mm 4mm;
     border-radius: 99mm;
   }
-  .plan.featured .tag { color: #fff; background: rgba(0,0,0,.22); }
-
-  .plan h2 { font: 800 7.6mm/1.05 'Baloo 2', sans-serif; color: #563188; margin-top: 3.5mm; }
-  .plan.featured h2 { color: #fff; }
-
-  .plan .price { font: 800 13mm/1 'Baloo 2', sans-serif; color: #7044B2; margin-top: 4mm; }
-  .plan .price small { font: 700 5mm 'Baloo 2', sans-serif; }
-  .plan.featured .price { color: #fff; }
-  .plan .per { font: 700 4mm 'Fredoka', sans-serif; color: #6a5a83; margin-top: 1.4mm; }
-  .plan.featured .per { color: #4a1c07; }
-
-  .plan ul { list-style: none; margin-top: 4.5mm; }
-  .plan li {
-    position: relative;
-    padding-left: 6.5mm;
-    font: 600 3.9mm/1.5 'Nunito Sans', sans-serif;
-    color: #5d4d77;
-    margin-top: 1.4mm;
+  .plan h2 { font: 800 6.6mm/1.1 'Baloo 2', sans-serif; color: #fff; margin-top: 3.5mm; }
+  .plan .pdesc { font: 600 3.7mm/1.5 'Nunito Sans', sans-serif; color: #e3d7f5; margin-top: 2.6mm; }
+  .plan .avail {
+    display: inline-block;
+    margin-top: 4mm;
+    background: #3DCB92;
+    color: #123c2a;
+    font: 700 3.7mm 'Fredoka', sans-serif;
+    padding: 2.2mm 4.6mm;
+    border-radius: 99mm;
+    box-shadow: 0 1.2mm 0 #1d7a52;
   }
-  .plan li::before {
-    content: "✓";
-    position: absolute; left: 0;
-    font: 800 3.9mm 'Baloo 2', sans-serif;
-    color: #188352;
-  }
-  .plan.featured li { color: #4a1c07; }
-  .plan.featured li::before { color: #fff; }
-
-  /* ---------- drop-in ---------- */
-  .dropin {
-    margin: 7mm 14mm 0;
-    background: rgba(255,255,255,.1);
-    border: .6mm solid rgba(255,255,255,.2);
-    border-radius: 8mm;
-    padding: 6mm 7mm 7mm;
-  }
-  .dropin .t {
-    text-align: center;
-    font: 700 4mm 'Fredoka', sans-serif;
-    letter-spacing: .07em;
-    text-transform: uppercase;
-    color: #3DCB92;
-  }
-  .dropin .t2 { text-align: center; font: 800 7.4mm/1.1 'Baloo 2', sans-serif; color: #fff; margin-top: 1.6mm; }
-  .drows {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 5mm;
-    margin-top: 5mm;
-  }
-  .drow {
-    background: #fff;
-    border-radius: 6mm;
-    padding: 5mm 4mm 5.5mm;
-    text-align: center;
-    box-shadow: 0 1.8mm 0 rgba(0,0,0,.22);
-  }
-  .drow .h { font: 700 4.6mm 'Baloo 2', sans-serif; color: #563188; }
-  .drow .p { font: 800 9.5mm/1 'Baloo 2', sans-serif; color: #F6602B; margin-top: 2mm; }
-  .drow .d { font: 600 3.2mm/1.35 'Nunito Sans', sans-serif; color: #6a5a83; margin-top: 1.8mm; }
 
   /* ---------- footer ---------- */
   .footer {
     margin-top: auto;
     background: #FFF8EE;
     border-radius: 9mm 9mm 0 0;
-    padding: 6mm 14mm 7mm;
+    padding: 5.5mm 14mm 6mm;
     display: flex;
     align-items: center;
     gap: 8mm;
@@ -163,7 +154,7 @@
     display: flex; align-items: center; justify-content: center;
   }
   .qr .box img { width: 26mm; }
-  .qr .cap { font: 700 3.2mm/1.25 'Fredoka', sans-serif; color: #563188; margin-top: 1.6mm; width: 32mm; }
+  .qr .cap { font: 700 3mm/1.2 'Fredoka', sans-serif; color: #563188; margin-top: 1.5mm; white-space: nowrap; }
 </style>
 </head>
 <body>
@@ -172,7 +163,7 @@
     <div class="logo-circle"><img src="logo.svg" alt="Kinderbay"></div>
     <div>
       <h1>Price List</h1>
-      <div class="sub">Memberships &amp; Drop-in Play</div>
+      <div class="sub">Drop-in Play &amp; Memberships</div>
     </div>
     <div class="m">
       <img src="mascot-triangle.svg" alt="">
@@ -180,45 +171,16 @@
     </div>
   </div>
 
-  <div class="plans">
-    <div class="plan">
-      <span class="tag">🌟 Little Explorers · Ages 1–4</span>
-      <h2>Preschool-style learning journey</h2>
-      <div class="price">AED 2,500</div>
-      <div class="per">per month · 9:00 AM – 1:00 PM daily</div>
-      <ul>
-        <li>Teacher-led daily preschool program</li>
-        <li>Organic meals included</li>
-        <li>Nanny support</li>
-        <li>Camera access &amp; daily photo updates</li>
-        <li>Fresh weekly schedules &amp; monthly events</li>
-      </ul>
-    </div>
-    <div class="plan featured">
-      <span class="tag">⭐ All Explorers · Most popular</span>
-      <h2>Unlimited visits, maximum flexibility</h2>
-      <div class="price">AED 1,200</div>
-      <div class="per">per month · up to 2 hours per day</div>
-      <ul>
-        <li>Unlimited visits all month</li>
-        <li>Fresh weekly activity schedules</li>
-        <li>Arts, music, games &amp; social play</li>
-        <li>Kids' yoga &amp; dance</li>
-        <li>Monthly events &amp; parents' community</li>
-      </ul>
-    </div>
-  </div>
-
   <div class="dropin">
-    <div class="t">Just visiting?</div>
-    <div class="t2">Drop-in play — no membership needed</div>
+    <div class="t">Just visiting? No membership needed</div>
+    <div class="t2">Drop-in Play</div>
     <div class="drows">
       <div class="drow">
         <div class="h">1 Hour</div>
         <div class="p">AED 70</div>
         <div class="d">A quick adventure.</div>
       </div>
-      <div class="drow">
+      <div class="drow featured-row">
         <div class="h">2 Hours</div>
         <div class="p">AED 120</div>
         <div class="d">More time to play, explore &amp; make friends.</div>
@@ -228,6 +190,21 @@
         <div class="p">AED 180</div>
         <div class="d">A full day of fun, activities and discovery.</div>
       </div>
+    </div>
+  </div>
+
+  <div class="plans">
+    <div class="plan">
+      <span class="tag">🌟 Little Explorers · Ages 1–4</span>
+      <h2>Preschool-style learning journey</h2>
+      <p class="pdesc">Teacher-led daily program from 9:00 AM – 1:00 PM with organic meals, nanny support, camera access and fresh weekly schedules.</p>
+      <div class="avail">Monthly membership available — ask our team</div>
+    </div>
+    <div class="plan">
+      <span class="tag">⭐ All Explorers · Most popular</span>
+      <h2>Unlimited visits, maximum flexibility</h2>
+      <p class="pdesc">Unlimited visits all month, up to 2 hours per day — arts, music, games, kids' yoga &amp; dance, monthly events and our parents' community.</p>
+      <div class="avail">Monthly membership available — ask our team</div>
     </div>
   </div>
 
