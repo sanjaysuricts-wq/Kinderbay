@@ -20,9 +20,9 @@
 
   .hero {
     display: grid;
-    grid-template-columns: 1fr 80mm;
+    grid-template-columns: 1fr 66mm;
     gap: 5mm;
-    padding: 7mm 10mm 0;
+    padding: 6mm 10mm 0;
     align-items: center;
   }
 
@@ -74,14 +74,14 @@
     position: absolute;
     filter: drop-shadow(0 1.5mm 1.5mm rgba(0,0,0,.3));
   }
-  .m-circle { width: 17mm; right: -4.5mm; top: -6mm; transform: rotate(9deg); }
-  .m-triangle { width: 17mm; left: -5mm; bottom: -5mm; transform: rotate(-10deg); }
+  .m-circle { width: 15mm; right: -4.5mm; top: -5.5mm; transform: rotate(9deg); }
+  .m-triangle { width: 15mm; left: -5mm; bottom: -4.5mm; transform: rotate(-10deg); }
   .opennow {
     position: absolute;
-    left: -6mm; top: 10mm;
+    left: -6mm; top: 8mm;
     background: #3DCB92;
     color: #123c2a;
-    font: 700 4.2mm 'Fredoka', sans-serif;
+    font: 700 3.9mm 'Fredoka', sans-serif;
     padding: 2.2mm 4.8mm;
     border-radius: 99mm;
     transform: rotate(-5deg);
@@ -90,10 +90,10 @@
   }
   .slots {
     position: absolute;
-    left: -6mm; bottom: 16mm;
+    left: -6mm; bottom: 13mm;
     background: #F6602B;
     color: #fff;
-    font: 700 4.2mm 'Fredoka', sans-serif;
+    font: 700 3.9mm 'Fredoka', sans-serif;
     letter-spacing: .03em;
     padding: 2.4mm 5mm;
     border-radius: 99mm;
@@ -101,8 +101,29 @@
     box-shadow: 0 1.4mm 0 #a63d10;
   }
 
+  .places {
+    display: flex;
+    justify-content: center;
+    gap: 3.6mm;
+    padding: 5mm 9mm 0;
+  }
+  .pframe {
+    background: #fff;
+    border-radius: 2.8mm;
+    padding: 1.2mm 1.2mm 1.6mm;
+    box-shadow: 0 1.3mm 0 rgba(0,0,0,.22);
+  }
+  .pframe:nth-child(odd) { transform: rotate(-2deg); }
+  .pframe:nth-child(even) { transform: rotate(2deg); }
+  .pframe img {
+    display: block;
+    width: 27.5mm; height: 18mm;
+    object-fit: cover;
+    border-radius: 2mm;
+  }
+
   .band {
-    margin-top: 4mm;
+    margin-top: 3mm;
     background: rgba(255,255,255,.12);
     border-top: .5mm solid rgba(255,255,255,.2);
     border-bottom: .5mm solid rgba(255,255,255,.2);
@@ -169,20 +190,25 @@
     </div>
   </div>
 
+  <div class="places">
+    <div class="pframe"><img src="place-ballpit.jpg" alt="Ball pit and indoor slides"></div>
+    <div class="pframe"><img src="place-toylibrary.jpg" alt="Toy library and library tree"></div>
+    <div class="pframe"><img src="place-junglegym.jpg" alt="Outdoor jungle gym"></div>
+    <div class="pframe"><img src="place-playroom.jpg" alt="Main playroom"></div>
+  </div>
+
   <div class="band">
     <div class="t">Inside the bay</div>
     <div class="chips">
       <span class="chip c1">Circle Time &amp; School Readiness</span>
       <span class="chip c2">Outdoor Jungle Gym</span>
       <span class="chip c3">Indoor Slides</span>
-      <span class="chip c4">Toy Library</span>
-      <span class="chip c5">Library Tree</span>
+      <span class="chip c4">Toy Library &amp; Library Tree</span>
       <span class="chip c2">Video Game Room</span>
       <span class="chip c3">Sports &amp; Yoga</span>
       <span class="chip c4">Cooking &amp; Baking</span>
-      <span class="chip c5">STEM Classes</span>
-      <span class="chip c1">Water Play</span>
-      <span class="chip c3">Movie Nights &amp; Events</span>
+      <span class="chip c5">STEM &amp; Water Play</span>
+      <span class="chip c1">Movie Nights &amp; Events</span>
     </div>
   </div>
 
